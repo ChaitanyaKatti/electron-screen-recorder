@@ -2,8 +2,8 @@
 
 This Electron app allows you to record your screen, inspired by the [Fireship🔥Youtube Video](https://www.youtube.com/watch?v=3yqDxhR2XxE). The application uses a newer version of Electron and features changes in how the renderer and main processes communicate with each other using `ipcRenderer` and `ipcMain`.
 
-<div>
-    <img src="/screen-recorder/assets/icons/icon_256x256.png" alt="App Preview">
+<div align="center">
+    <img src="./assets/images/app_preview.png" alt="App Preview" width=50%>
 </div>
 
 
