@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="render.js"></script>
+  </head>
+
+  <body style="font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    
+    <div class="logo-container">
+      <img src="../assets/icons/icon_256x256.png" alt="Logo" class="logo">
+      <h1 class="is-flex is-justify-content-center py-6" style="font-size: 2rem; font-weight: 500;">Screen Recorder</h1>
+      <!-- <h1 class="text">Screen Recorder</h1> -->
+    </div>
+
+
+    <video class="is-flex is-justify-content-center m-auto " width=90% controls>
+      <source src="" type="video/mp4">
+    </video>
+        
+    <div class="is-flex is-justify-content-left pl-6 pr-6 p-3">
+      <button class="button is-secondary mr-2 has-text-weight-bold" id="reloadBtn">🔄</button>
+      <select class="is-flex" id="videoSelect">
+        <option value="0">Select a video source</option>
+      </select>
+    </div>
+
+    <div class="is-flex is-justify-content-center">
+      <button class="button is-secondary mr-2 has-text-weight-bold" id="recordBtn">🟢START</button>
+    </div>
+    
+    <div class="is-flex is-justify-content-center">
+      <hr style="height:2px; background-color:rgb(169, 175, 182); width: 90%;">
+    </div>
+
+    <div class="is-flex is-justify-content-center is-align-items-center">
+      <b class="mr-2" >SAVE TO:</b> 
+      <button  class="button is-warning" id="openFolderBtn">Choose Save Path</button>
+    </div>
+    
+    <div class="is-flex is-justify-content-center">
+      <em>
+        Longer videos may take a while to save to mp4 format.
+      </em>
+    </div>
+  </body> 
+</html>
